@@ -1625,6 +1625,64 @@
         }
       }
     },
+    "Check Now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt prüfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprobar ahora"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier maintenant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla ora"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今すぐ確認"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 확인"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificar Agora"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi Kontrol Et"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即检查"
+          }
+        }
+      }
+    },
     "Check for new data": {
       "localizations": {
         "de": {
@@ -1679,6 +1737,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "检查新数据"
+          }
+        }
+      }
+    },
+    "Check for updates automatically": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisch nach Updates suchen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar actualizaciones automáticamente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher les mises à jour automatiquement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca aggiornamenti automaticamente"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートを自動的に確認"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동으로 업데이트 확인"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificar atualizações automaticamente"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeleri otomatik kontrol et"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动检查更新"
           }
         }
       }
@@ -1741,6 +1857,64 @@
         }
       }
     },
+    "Checking for updates failed. Try again later.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Suche nach Updates ist fehlgeschlagen. Versuche es später erneut."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se han podido buscar actualizaciones. Vuelve a intentarlo más tarde."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La recherche de mises à jour a échoué. Réessayez plus tard."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricerca degli aggiornamenti non riuscita. Riprova più tardi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートを確認できませんでした。しばらくしてからもう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 확인에 실패했습니다. 나중에 다시 시도하십시오."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao verificar atualizações. Tente novamente mais tarde."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeler kontrol edilemedi. Daha sonra tekrar deneyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查更新失败。请稍后再试。"
+          }
+        }
+      }
+    },
     "Checking the install…": {
       "localizations": {
         "de": {
@@ -1795,6 +1969,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "正在检查安装…"
+          }
+        }
+      }
+    },
+    "Checking…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird geprüft …"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprobando…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérification…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controllo…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認中…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인 중…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificando…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol ediliyor…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在检查…"
           }
         }
       }
@@ -2143,6 +2375,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "转化率下降 · %@"
+          }
+        }
+      }
+    },
+    "Couldn't reach GitHub to check for updates. Check your internet connection and try again.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub war für die Update-Suche nicht erreichbar. Prüfe deine Internetverbindung und versuche es erneut."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido conectar con GitHub para buscar actualizaciones. Comprueba tu conexión a internet y vuelve a intentarlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de joindre GitHub pour rechercher les mises à jour. Vérifiez votre connexion Internet et réessayez."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile raggiungere GitHub per cercare aggiornamenti. Controlla la connessione a Internet e riprova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートを確認するためにGitHubに接続できませんでした。インターネット接続を確認して、もう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트를 확인하기 위해 GitHub에 연결할 수 없습니다. 인터넷 연결을 확인하고 다시 시도하십시오."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível acessar o GitHub para verificar atualizações. Verifique sua conexão com a internet e tente novamente."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeleri kontrol etmek için GitHub'a ulaşılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法连接 GitHub 检查更新。请检查你的互联网连接，然后重试。"
           }
         }
       }
@@ -2843,6 +3133,64 @@
         }
       }
     },
+    "Downloading…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird geladen …"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargando…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Téléchargement…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロード中…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드 중…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baixando…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İndiriliyor…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在下载…"
+          }
+        }
+      }
+    },
     "EU": {
       "localizations": {
         "de": {
@@ -3423,6 +3771,64 @@
         }
       }
     },
+    "FunnelRadar can't replace itself in its current location. The download page has been opened in your browser.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar kann sich an seinem aktuellen Ort nicht selbst ersetzen. Die Download-Seite wurde in deinem Browser geöffnet."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar no puede reemplazarse a sí mismo en su ubicación actual. Se ha abierto la página de descarga en tu navegador."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar ne peut pas se remplacer à son emplacement actuel. La page de téléchargement a été ouverte dans votre navigateur."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar non può sostituirsi nella posizione attuale. La pagina di download è stata aperta nel browser."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadarは現在の場所では自身を置き換えられません。ブラウザでダウンロードページを開きました。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar가 현재 위치에서 자신을 교체할 수 없습니다. 브라우저에서 다운로드 페이지가 열렸습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O FunnelRadar não pode se substituir no local atual. A página de download foi aberta no seu navegador."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar bulunduğu konumda kendini değiştiremiyor. İndirme sayfası tarayıcınızda açıldı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar 无法在当前位置替换自身。已在浏览器中打开下载页面。"
+          }
+        }
+      }
+    },
     "FunnelRadar follows the projects you pick here. In Settings you can change them, and pick each one's key event and retention events.": {
       "localizations": {
         "de": {
@@ -3535,6 +3941,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "FunnelRadar 与 Mixpanel 没有关联。"
+          }
+        }
+      }
+    },
+    "FunnelRadar is up to date": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar ist auf dem neuesten Stand"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar está actualizado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar est à jour"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar è aggiornato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadarは最新です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar가 최신 버전입니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O FunnelRadar está atualizado"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar güncel"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar 已是最新版本"
           }
         }
       }
@@ -3709,6 +4173,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "FunnelRadar 位于菜单栏。首次完整读取每个应用约需一分钟，应用较多时会因 Mixpanel 限制查询而分散在几个小时内完成。请在设置中选择各应用的事件，让留存和用户粘性符合您的本意。"
+          }
+        }
+      }
+    },
+    "FunnelRadar looks for a new release on GitHub once a day. Updates are only installed when you click Install; they are checked for Apple's notarization and the same developer signature first.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar sucht einmal am Tag auf GitHub nach einer neuen Version. Updates werden nur installiert, wenn du auf „Installieren“ klickst; vorher werden Apples Notarisierung und dieselbe Entwicklersignatur geprüft."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar busca una nueva versión en GitHub una vez al día. Las actualizaciones solo se instalan cuando haces clic en Instalar; antes se comprueba la notarización de Apple y que tengan la misma firma de desarrollador."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar recherche une nouvelle version sur GitHub une fois par jour. Les mises à jour ne sont installées que lorsque vous cliquez sur Installer ; leur notarisation Apple et la même signature de développeur sont vérifiées au préalable."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar cerca una nuova versione su GitHub una volta al giorno. Gli aggiornamenti vengono installati solo quando fai clic su Installa; prima vengono verificate la notarizzazione di Apple e la stessa firma dello sviluppatore."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadarは1日に1回GitHubで新しいリリースを確認します。アップデートは「インストール」をクリックしたときにのみインストールされ、事前にAppleの公証と同じデベロッパ署名が確認されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar는 하루에 한 번 GitHub에서 새로운 릴리즈를 확인합니다. 업데이트는 ‘설치’를 클릭할 때만 설치되며, 먼저 Apple의 공증 및 동일한 개발자 서명을 확인합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O FunnelRadar procura uma nova versão no GitHub uma vez por dia. As atualizações só são instaladas quando você clica em Instalar; antes, verifica-se a notarização da Apple e a mesma assinatura de desenvolvedor."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar günde bir kez GitHub'da yeni bir sürüm arar. Güncellemeler yalnızca Kur'a tıkladığınızda kurulur; önce Apple'ın notarizasyonu ve aynı geliştirici imzası kontrol edilir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar 每天在 GitHub 上检查一次新版本。只有在你点按“安装”时才会安装更新；安装前会先检查 Apple 公证和相同的开发者签名。"
           }
         }
       }
@@ -4119,6 +4641,122 @@
         }
       }
     },
+    "GitHub is limiting update checks right now. Try again in an hour.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub begrenzt Update-Prüfungen gerade. Versuche es in einer Stunde erneut."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub está limitando las comprobaciones de actualizaciones. Vuelve a intentarlo dentro de una hora."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub limite actuellement les recherches de mises à jour. Réessayez dans une heure."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub sta limitando i controlli degli aggiornamenti. Riprova tra un’ora."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在、GitHubによりアップデートの確認が制限されています。1時間後にもう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 GitHub에서 업데이트 확인을 제한하고 있습니다. 한 시간 후에 다시 시도하십시오."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O GitHub está limitando as verificações de atualização no momento. Tente novamente em uma hora."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub şu anda güncelleme kontrollerini sınırlıyor. Bir saat sonra tekrar deneyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub 目前正在限制更新检查。请在一小时后重试。"
+          }
+        }
+      }
+    },
+    "GitHub returned an error while downloading the update. Try again later.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub hat beim Laden des Updates einen Fehler gemeldet. Versuche es später erneut."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub ha devuelto un error al descargar la actualización. Vuelve a intentarlo más tarde."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub a renvoyé une erreur lors du téléchargement de la mise à jour. Réessayez plus tard."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub ha restituito un errore durante il download dell’aggiornamento. Riprova più tardi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートのダウンロード中にGitHubからエラーが返されました。しばらくしてからもう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트를 다운로드하는 동안 GitHub에서 오류를 반환했습니다. 나중에 다시 시도하십시오."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O GitHub retornou um erro ao baixar a atualização. Tente novamente mais tarde."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncelleme indirilirken GitHub bir hata döndürdü. Daha sonra tekrar deneyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载更新时 GitHub 返回错误。请稍后再试。"
+          }
+        }
+      }
+    },
     "In %@ an active user came back on about %@ days of 30.": {
       "localizations": {
         "de": {
@@ -4293,6 +4931,64 @@
         }
       }
     },
+    "Install and Relaunch": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installieren und neu starten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalar y reiniciar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installer et relancer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installa e riavvia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インストールして再起動"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치 및 재실행"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalar e Reabrir"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kur ve Yeniden Başlat"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装并重新启动"
+          }
+        }
+      }
+    },
     "Install the Mixpanel tool": {
       "localizations": {
         "de": {
@@ -4347,6 +5043,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "安装 Mixpanel 工具"
+          }
+        }
+      }
+    },
+    "Installed version": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installierte Version"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versión instalada"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version installée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versione installata"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インストール済みのバージョン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치된 버전"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versão instalada"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurulu sürüm"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已安装的版本"
           }
         }
       }
@@ -4409,6 +5163,122 @@
         }
       }
     },
+    "Installing the update failed. Try again, or download it from GitHub.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Installation des Updates ist fehlgeschlagen. Versuche es erneut oder lade es von GitHub herunter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido instalar la actualización. Vuelve a intentarlo o descárgala desde GitHub."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’installation de la mise à jour a échoué. Réessayez ou téléchargez-la depuis GitHub."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installazione dell’aggiornamento non riuscita. Riprova o scaricalo da GitHub."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートをインストールできませんでした。もう一度試すか、GitHubからダウンロードしてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 설치에 실패했습니다. 다시 시도하거나 GitHub에서 다운로드하십시오."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao instalar a atualização. Tente novamente ou baixe-a do GitHub."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncelleme kurulamadı. Tekrar deneyin veya GitHub'dan indirin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装更新失败。请重试，或从 GitHub 下载。"
+          }
+        }
+      }
+    },
+    "Installing…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird installiert …"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalando…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installation…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installazione…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インストール中…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치 중…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalando…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kuruluyor…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在安装…"
+          }
+        }
+      }
+    },
     "Key event": {
       "localizations": {
         "de": {
@@ -4463,6 +5333,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "关键事件"
+          }
+        }
+      }
+    },
+    "Key events, funnels and retention for each project.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlüsselereignisse, Funnels und Bindung pro Projekt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eventos clave, embudos y retención de cada proyecto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Événements clés, funnels et rétention par projet."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eventi chiave, funnel e retention per progetto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プロジェクトごとの主要イベント、ファネル、リテンション。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로젝트별 주요 이벤트, 퍼널, 유지율입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eventos-chave, funis e retenção por projeto."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proje başına ana olaylar, huniler ve elde tutma."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每个项目的关键事件、漏斗和留存。"
           }
         }
       }
@@ -5449,6 +6377,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "暂不"
+          }
+        }
+      }
+    },
+    "Not checked yet": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch nicht geprüft"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no comprobado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore vérifié"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ancora controllato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未確認"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 확인하지 않음"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ainda não verificado"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz kontrol edilmedi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未检查"
           }
         }
       }
@@ -7831,6 +8817,64 @@
         }
       }
     },
+    "The downloaded update is damaged (checksum mismatch). Nothing was installed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das geladene Update ist beschädigt (Prüfsumme stimmt nicht). Es wurde nichts installiert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La actualización descargada está dañada (la suma de comprobación no coincide). No se ha instalado nada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mise à jour téléchargée est endommagée (somme de contrôle incorrecte). Rien n’a été installé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’aggiornamento scaricato è danneggiato (checksum non corrispondente). Non è stato installato nulla."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロードしたアップデートが破損しています（チェックサムの不一致）。何もインストールされていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드한 업데이트가 손상되었습니다(체크섬 불일치). 아무것도 설치되지 않았습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A atualização baixada está danificada (checksum não corresponde). Nada foi instalado."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İndirilen güncelleme bozuk (sağlama toplamı uyuşmuyor). Hiçbir şey kurulmadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载的更新已损坏（校验和不匹配）。未安装任何内容。"
+          }
+        }
+      }
+    },
     "The event lists appear after FunnelRadar's first read.": {
       "localizations": {
         "de": {
@@ -7947,6 +8991,64 @@
         }
       }
     },
+    "The installer couldn't be started. Nothing was changed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Installationsprogramm konnte nicht gestartet werden. Es wurde nichts geändert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido iniciar el instalador. No se ha cambiado nada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le programme d’installation n’a pas pu démarrer. Rien n’a été modifié."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile avviare il programma di installazione. Non è stato modificato nulla."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インストーラを起動できませんでした。何も変更されていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치 프로그램을 시작할 수 없습니다. 아무것도 변경되지 않았습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível iniciar o instalador. Nada foi alterado."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yükleyici başlatılamadı. Hiçbir şey değiştirilmedi."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法启动安装器。未做任何更改。"
+          }
+        }
+      }
+    },
     "The key event drives daily users, stickiness and unusual days. Retention needs both of the other two. A comma in an event's name can't be queried through mp, so those events aren't listed.": {
       "localizations": {
         "de": {
@@ -8001,6 +9103,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "关键事件决定日活用户、用户粘性和异常日期。留存则需要另外两个事件。名称中含逗号的事件无法通过 mp 查询，因此不会列出。"
+          }
+        }
+      }
+    },
+    "The latest release doesn't include a Mac download yet.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die neueste Version enthält noch keinen Mac-Download."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La última versión aún no incluye una descarga para Mac."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La dernière version ne propose pas encore de téléchargement pour Mac."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’ultima versione non include ancora un download per Mac."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最新のリリースにはまだMac用のダウンロードが含まれていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최신 릴리즈에는 아직 Mac용 다운로드가 포함되어 있지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A versão mais recente ainda não inclui um download para Mac."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En son sürümde henüz Mac için bir indirme yok."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最新版本尚未包含 Mac 下载。"
           }
         }
       }
@@ -8121,6 +9281,470 @@
         }
       }
     },
+    "The update couldn't be copied from its disk image.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Update konnte nicht aus seinem Disk-Image kopiert werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido copiar la actualización desde su imagen de disco."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de copier la mise à jour depuis son image disque."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile copiare l’aggiornamento dalla sua immagine disco."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクイメージからアップデートをコピーできませんでした。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스크 이미지에서 업데이트를 복사할 수 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível copiar a atualização da imagem de disco."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncelleme disk görüntüsünden kopyalanamadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法从磁盘映像中拷贝更新。"
+          }
+        }
+      }
+    },
+    "The update couldn't be downloaded. Check your internet connection and try again.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Update konnte nicht geladen werden. Prüfe deine Internetverbindung und versuche es erneut."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido descargar la actualización. Comprueba tu conexión a internet y vuelve a intentarlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de télécharger la mise à jour. Vérifiez votre connexion Internet et réessayez."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile scaricare l’aggiornamento. Controlla la connessione a Internet e riprova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートをダウンロードできませんでした。インターネット接続を確認して、もう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트를 다운로드할 수 없습니다. 인터넷 연결을 확인하고 다시 시도하십시오."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível baixar a atualização. Verifique sua conexão com a internet e tente novamente."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncelleme indirilemedi. İnternet bağlantınızı kontrol edip tekrar deneyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法下载更新。请检查你的互联网连接，然后重试。"
+          }
+        }
+      }
+    },
+    "The update isn't signed by the same developer as this copy of FunnelRadar. Nothing was installed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Update ist nicht vom selben Entwickler signiert wie diese Kopie von FunnelRadar. Es wurde nichts installiert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La actualización no está firmada por el mismo desarrollador que esta copia de FunnelRadar. No se ha instalado nada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mise à jour n’est pas signée par le même développeur que cette copie de FunnelRadar. Rien n’a été installé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’aggiornamento non è firmato dallo stesso sviluppatore di questa copia di FunnelRadar. Non è stato installato nulla."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートはこのFunnelRadarと同じデベロッパによって署名されていません。何もインストールされていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트가 현재 FunnelRadar와 동일한 개발자로 서명되지 않았습니다. 아무것도 설치되지 않았습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A atualização não foi assinada pelo mesmo desenvolvedor desta cópia do FunnelRadar. Nada foi instalado."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncelleme, FunnelRadar'un bu kopyasıyla aynı geliştirici tarafından imzalanmamış. Hiçbir şey kurulmadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此更新的签名开发者与当前 FunnelRadar 副本的不同。未安装任何内容。"
+          }
+        }
+      }
+    },
+    "The update's checksum file couldn't be read.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Prüfsummendatei des Updates konnte nicht gelesen werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido leer el archivo de suma de comprobación de la actualización."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de lire le fichier de somme de contrôle de la mise à jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile leggere il file di checksum dell’aggiornamento."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートのチェックサムファイルを読み取れませんでした。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트의 체크섬 파일을 읽을 수 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível ler o arquivo de checksum da atualização."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemenin sağlama toplamı dosyası okunamadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法读取更新的校验和文件。"
+          }
+        }
+      }
+    },
+    "The update's code signature is invalid. Nothing was installed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Codesignatur des Updates ist ungültig. Es wurde nichts installiert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La firma de código de la actualización no es válida. No se ha instalado nada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La signature de code de la mise à jour n’est pas valide. Rien n’a été installé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La firma del codice dell’aggiornamento non è valida. Non è stato installato nulla."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートのコード署名が無効です。何もインストールされていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트의 코드 서명이 유효하지 않습니다. 아무것도 설치되지 않았습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A assinatura de código da atualização é inválida. Nada foi instalado."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemenin kod imzası geçersiz. Hiçbir şey kurulmadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新的代码签名无效。未安装任何内容。"
+          }
+        }
+      }
+    },
+    "The update's disk image couldn't be opened.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Disk-Image des Updates konnte nicht geöffnet werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido abrir la imagen de disco de la actualización."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’ouvrir l’image disque de la mise à jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile aprire l’immagine disco dell’aggiornamento."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートのディスクイメージを開けませんでした。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트의 디스크 이미지를 열 수 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível abrir a imagem de disco da atualização."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemenin disk görüntüsü açılamadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法打开更新的磁盘映像。"
+          }
+        }
+      }
+    },
+    "The update's disk image doesn't contain FunnelRadar.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Disk-Image des Updates enthält FunnelRadar nicht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La imagen de disco de la actualización no contiene FunnelRadar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’image disque de la mise à jour ne contient pas FunnelRadar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’immagine disco dell’aggiornamento non contiene FunnelRadar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートのディスクイメージにFunnelRadarが含まれていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트의 디스크 이미지에 FunnelRadar가 포함되어 있지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A imagem de disco da atualização não contém o FunnelRadar."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemenin disk görüntüsünde FunnelRadar yok."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新的磁盘映像中不包含 FunnelRadar。"
+          }
+        }
+      }
+    },
+    "The version you have, and newer ones.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Version und neuere."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu versión y las más recientes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre version et les plus récentes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua versione e quelle più recenti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在のバージョンと新しいバージョン。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 버전과 새 버전입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua versão e as mais recentes."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürümünüz ve daha yenileri."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您的版本及更新版本。"
+          }
+        }
+      }
+    },
     "The worst step of each saved funnel, worst first.": {
       "localizations": {
         "de": {
@@ -8233,6 +9857,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "此账户看不到任何项目。"
+          }
+        }
+      }
+    },
+    "This copy of FunnelRadar isn't signed with a Developer ID, so it can't update itself.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Kopie von FunnelRadar ist nicht mit einer Developer ID signiert und kann sich daher nicht selbst aktualisieren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta copia de FunnelRadar no está firmada con un Developer ID, así que no puede actualizarse sola."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette copie de FunnelRadar n’est pas signée avec un Developer ID et ne peut donc pas se mettre à jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa copia di FunnelRadar non è firmata con un Developer ID, quindi non può aggiornarsi da sola."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このFunnelRadarはDeveloper IDで署名されていないため、自動アップデートできません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 FunnelRadar는 Developer ID로 서명되지 않아 스스로 업데이트할 수 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta cópia do FunnelRadar não está assinada com um Developer ID, então não pode se atualizar."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar'un bu kopyası bir Developer ID ile imzalanmamış, bu yüzden kendini güncelleyemez."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 FunnelRadar 副本未使用 Developer ID 签名，因此无法自行更新。"
           }
         }
       }
@@ -9223,6 +10905,64 @@
         }
       }
     },
+    "Updates": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updates"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actualizaciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mises à jour"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiornamenti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデート"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atualizações"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeler"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新"
+          }
+        }
+      }
+    },
     "Use This Account": {
       "localizations": {
         "de": {
@@ -9451,6 +11191,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "使用 Mixpanel 官方 mp 工具，由它保存您的登录信息。"
+          }
+        }
+      }
+    },
+    "Version %@ is available": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@ ist verfügbar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La versión %@ está disponible"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La version %@ est disponible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È disponibile la versione %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バージョン%@が利用可能です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버전 %@ 사용 가능"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A versão %@ está disponível"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sürümü mevcut"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本 %@ 现已可用"
           }
         }
       }
@@ -9687,6 +11485,122 @@
         }
       }
     },
+    "What's new": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neuigkeiten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novedades"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveautés"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novità"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新機能"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로운 기능"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novidades"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yenilikler"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新功能"
+          }
+        }
+      }
+    },
+    "When FunnelRadar opens and how often it reads.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wann FunnelRadar öffnet und wie oft es liest."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuándo se abre FunnelRadar y con qué frecuencia lee."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quand FunnelRadar s'ouvre et à quelle fréquence il lit."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando si apre FunnelRadar e ogni quanto legge."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadarを開くタイミングと読み込み頻度。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar가 열리는 시점과 읽는 주기입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando o FunnelRadar abre e com que frequência lê."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar ne zaman açılır ve ne sıklıkla okur."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FunnelRadar 何时打开以及读取频率。"
+          }
+        }
+      }
+    },
     "Where people drop out": {
       "localizations": {
         "de": {
@@ -9741,6 +11655,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "用户在哪里流失"
+          }
+        }
+      }
+    },
+    "Which notifications you get, and when.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welche Mitteilungen du bekommst und wann."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qué notificaciones recibes y cuándo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelles notifications vous recevez, et quand."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quali notifiche ricevi e quando."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受け取る通知とタイミング。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "받을 알림과 시점입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quais notificações você recebe e quando."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangi bildirimleri ne zaman alacağınız."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您收到哪些通知以及何时收到。"
           }
         }
       }
@@ -9919,6 +11891,64 @@
         }
       }
     },
+    "Your sign-in and the command line tool.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Anmeldung und das Befehlszeilentool."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu sesión y la herramienta de línea de comandos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre connexion et l'outil en ligne de commande."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo accesso e lo strumento a riga di comando."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サインインとコマンドラインツール。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인과 명령줄 도구입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu login e a ferramenta de linha de comando."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Girişiniz ve komut satırı aracı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您的登录信息和命令行工具。"
+          }
+        }
+      }
+    },
     "alerts": {
       "localizations": {
         "de": {
@@ -10089,6 +12119,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "留住 %@"
+          }
+        }
+      }
+    },
+    "macOS Gatekeeper rejected the update. Nothing was installed.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS Gatekeeper hat das Update abgelehnt. Es wurde nichts installiert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gatekeeper de macOS ha rechazado la actualización. No se ha instalado nada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gatekeeper de macOS a refusé la mise à jour. Rien n’a été installé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gatekeeper di macOS ha rifiutato l’aggiornamento. Non è stato installato nulla."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOSのGatekeeperがアップデートを拒否しました。何もインストールされていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS Gatekeeper가 업데이트를 거부했습니다. 아무것도 설치되지 않았습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Gatekeeper do macOS rejeitou a atualização. Nada foi instalado."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS Gatekeeper güncellemeyi reddetti. Hiçbir şey kurulmadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS Gatekeeper 拒绝了此更新。未安装任何内容。"
           }
         }
       }

@@ -13,13 +13,16 @@
 		46326782A8E4CDEA105F8BFD /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52931DB8F9FF90739881B2B8 /* DashboardView.swift */; };
 		51A8154D1301C55AD372EEC9 /* MenuPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF0451E9A167A5230FFC5B /* MenuPanel.swift */; };
 		52B2F986605D4C0A78ABACED /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4C472052FF1539FE7EB04 /* Notifier.swift */; };
+		5B82ABB2A0C8F51D7BDE1B28 /* UpdateInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BBF7332282283129404CB /* UpdateInstaller.swift */; };
 		6E18D69F927431DFC4235809 /* FunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9C46903C9CB16FCF3B2B99E /* FunnelKit */; };
 		7731B3351A823873C26B6D55 /* FunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 623CE151FF3B8E07BBF47575 /* FunnelKit */; };
 		77F5E4E3246BF5F9D4B6F474 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A81F9FBE6278CF44784C6 /* AppModel.swift */; };
 		7B968CB7A5A6B20B5EBEC9BA /* funnelradar-cli in Embed Dependencies */ = {isa = PBXBuildFile; fileRef = CF6D0A2AE77758592B1AB08F /* funnelradar-cli */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D8D81C6A97A3416786E6706 /* AppUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2BCCAFB247C3B060B5CD0 /* AppUpdater.swift */; };
 		896C01ECAD8B222F03B9FCEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6FDCBAD0C7406E1D7E6AF1 /* Assets.xcassets */; };
 		939C04C5FD987AD22381ED5F /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E062CD7857D095F24221EF09 /* ProjectView.swift */; };
 		9E6FD57D10F884F2E521AE75 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09D2DCA1B8B9689C4A12086 /* PortfolioView.swift */; };
+		A1BD4298601173B56707EA1A /* UpdateCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EE0FEB404F850526544C /* UpdateCore.swift */; };
 		A7BBA403FC53D3DAFE9141D2 /* Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F30B09939D5B71F3E7C548 /* Snapshots.swift */; };
 		AAF627F87FFC63E6E7FCCD99 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021BD606E9B59FB1F9DB4AE /* SettingsWindow.swift */; };
 		BE31084388CB070767D67ACD /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD8F5E6761054AD5E4081D /* Format.swift */; };
@@ -56,9 +59,11 @@
 /* Begin PBXFileReference section */
 		073A70F05EAA8DB7FEF8F0BF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1316021A77D025ABA83C4EEE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1871EE0FEB404F850526544C /* UpdateCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCore.swift; sourceTree = "<group>"; };
 		19F4C472052FF1539FE7EB04 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 		240A81F9FBE6278CF44784C6 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		26EB066284DA413C177433EC /* FunnelRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnelRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C2BCCAFB247C3B060B5CD0 /* AppUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdater.swift; sourceTree = "<group>"; };
 		4BF2D3A5814BA7D190E22CD0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		52931DB8F9FF90739881B2B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		540D3C9AB879DAED7FB2F115 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		A09D2DCA1B8B9689C4A12086 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		A2AD8F5E6761054AD5E4081D /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		A6582BCC47E88B7A31A17331 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B76BBF7332282283129404CB /* UpdateInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInstaller.swift; sourceTree = "<group>"; };
 		CF6D0A2AE77758592B1AB08F /* funnelradar-cli */ = {isa = PBXFileReference; includeInIndex = 0; path = "funnelradar-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E062CD7857D095F24221EF09 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		E6B50375C908C0153695B16B /* FunnelKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FunnelKit; path = FunnelKit; sourceTree = SOURCE_ROOT; };
@@ -102,6 +108,16 @@
 				E6B50375C908C0153695B16B /* FunnelKit */,
 			);
 			name = Packages;
+			sourceTree = "<group>";
+		};
+		38D9784EC0F9106F68F78269 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				45C2BCCAFB247C3B060B5CD0 /* AppUpdater.swift */,
+				1871EE0FEB404F850526544C /* UpdateCore.swift */,
+				B76BBF7332282283129404CB /* UpdateInstaller.swift */,
+			);
+			path = Update;
 			sourceTree = "<group>";
 		};
 		46949D7B13F0D5DB48335E7B /* FunnelKit */ = {
@@ -171,6 +187,7 @@
 				7998A61189FE2CECBB986F48 /* App */,
 				46DCC9BA7FC952BE6301BA55 /* Resources */,
 				D15CDC185917C68A6E90C4E9 /* Support */,
+				38D9784EC0F9106F68F78269 /* Update */,
 				DC6A19E32E6655D0B70F21D0 /* Views */,
 			);
 			path = FunnelRadar;
@@ -323,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F5E4E3246BF5F9D4B6F474 /* AppModel.swift in Sources */,
+				7D8D81C6A97A3416786E6706 /* AppUpdater.swift in Sources */,
 				46326782A8E4CDEA105F8BFD /* DashboardView.swift in Sources */,
 				EB77CA9A0F6509A67DCDC1FA /* Design.swift in Sources */,
 				BE31084388CB070767D67ACD /* Format.swift in Sources */,
@@ -336,6 +354,8 @@
 				060D9C54493F6C718FC4F46F /* SettingsView.swift in Sources */,
 				AAF627F87FFC63E6E7FCCD99 /* SettingsWindow.swift in Sources */,
 				A7BBA403FC53D3DAFE9141D2 /* Snapshots.swift in Sources */,
+				A1BD4298601173B56707EA1A /* UpdateCore.swift in Sources */,
+				5B82ABB2A0C8F51D7BDE1B28 /* UpdateInstaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

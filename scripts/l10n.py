@@ -16,7 +16,7 @@ CONTEXT = re.compile(
     r'(?:\b(?:Text|Button|Label|Toggle|Section|Picker|LabeledContent|ProgressView|ContentUnavailableView|DisclosureGroup|SecureField|TextField|EmptyNote)\(\s*'
     r'|String\(localized:\s*|title:\s*|text:\s*|help:\s*|subtitle:\s*|ChartCard\(title:\s*|picker\(|description: Text\(|case \.\w+(?:, \.\w+)*: |stat\([^,\n]+,\s*|\?\s+|\n\s*:\s+|\.help\(Text\()$'
 )
-SKIP = {"Day", "Value", "Date", "Series", "Users", "Trend", "Share", "Month", "DAU/MAU", "Start", "Index", "main", "FunnelRadar", "mp"}
+SKIP = {"scope", "Day", "Value", "Date", "Series", "Users", "Trend", "Share", "Month", "DAU/MAU", "Start", "Index", "main", "FunnelRadar", "mp"}
 KEEP = {"Checking access…", "Getting uv with Homebrew…", "Preparing Python…", "Installing mp…", "Checking the install…", "apps", "alerts", "queries this hour"}
 
 

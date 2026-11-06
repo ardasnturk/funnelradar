@@ -6,6 +6,7 @@ All notable changes to FunnelRadar are recorded here. The format follows
 ## [0.1.0] — Unreleased
 
 ### Added
+- Check for updates and install them from the app.
 - Menu bar panel and a window with every project side by side, and one project in detail.
 - Funnel leaks, D1/D7/D30 retention with a cohort heatmap, DAU/MAU stickiness, biggest movers,
   unusual days, a weekday pattern and a trend line.

@@ -15,6 +15,9 @@ struct MenuPanel: View {
             } else {
                 setup
             }
+            if model.updater.availableRelease != nil {
+                UpdateStatusView(updater: model.updater).glassCard(padding: 10)
+            }
             footer
         }
         .padding(10)

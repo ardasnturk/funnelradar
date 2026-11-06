@@ -8,15 +8,16 @@ struct DashboardView: View {
         @Bindable var model = model
         NavigationSplitView {
             List(selection: $model.selection) {
-                Label("Portfolio", systemImage: "square.grid.2x2").tag(SidebarItem.portfolio)
-                Label("Alerts", systemImage: "bell").tag(SidebarItem.alerts)
+                SidebarRow(item: .portfolio, selection: model.selection) { Label("Portfolio", systemImage: "square.grid.2x2") }
+                SidebarRow(item: .alerts, selection: model.selection) { Label("Alerts", systemImage: "bell") }
                 Section("Apps") {
                     ForEach(model.portfolio.reports) { report in
-                        HStack(spacing: 8) {
+                        SidebarRow(item: .project(report.id), selection: model.selection) {
+                            HStack(spacing: 8) {
                             ProjectIcon(name: report.project.name, size: 20)
                             Text(verbatim: report.project.name).lineLimit(1)
+                            }
                         }
-                        .tag(SidebarItem.project(report.id))
                     }
                 }
             }
@@ -39,6 +40,27 @@ struct DashboardView: View {
                 }
             }
         }
+    }
+}
+
+/// A sidebar row that stays clearly marked when selected, also while the sidebar isn't the
+/// focused part of the window, where the system's own highlight goes faint.
+struct SidebarRow<Content: View>: View {
+    let item: SidebarItem
+    let selection: SidebarItem?
+    @ViewBuilder var content: Content
+
+    private var isSelected: Bool { item == (selection ?? .portfolio) }
+
+    var body: some View {
+        content
+            .fontWeight(isSelected ? .semibold : .regular)
+            .tag(item)
+            .listRowBackground(
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .fill(isSelected ? Color.accentColor.opacity(0.32) : .clear)
+                    .padding(.horizontal, 8)
+            )
     }
 }
 
