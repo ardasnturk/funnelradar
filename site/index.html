@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FunnelRadar — See where people drop out, from your menu bar</title>
+  <meta name="description" content="FunnelRadar is a free Mac menu bar app for your Mixpanel projects: funnel leaks, D1, D7 and D30 retention, stickiness, movers, unusual days and alerts. Read-only, with no server and no account.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#f6f5fc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#08070f" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="FunnelRadar">
+  <meta property="og:description" content="Funnel leaks, retention and unusual days across your Mixpanel projects. Free and open source, read-only, for macOS.">
+  <meta property="og:image" content="https://funnelradar.ardasnturk.com/assets/icon-512.png">
+  <meta property="og:url" content="https://funnelradar.ardasnturk.com/">
+  <link rel="canonical" href="https://funnelradar.ardasnturk.com/">
+  <link rel="alternate" hreflang="en" href="https://funnelradar.ardasnturk.com/?lang=en">
+  <link rel="alternate" hreflang="tr" href="https://funnelradar.ardasnturk.com/?lang=tr">
+  <link rel="alternate" hreflang="de" href="https://funnelradar.ardasnturk.com/?lang=de">
+  <link rel="alternate" hreflang="es" href="https://funnelradar.ardasnturk.com/?lang=es">
+  <link rel="alternate" hreflang="fr" href="https://funnelradar.ardasnturk.com/?lang=fr">
+  <link rel="alternate" hreflang="it" href="https://funnelradar.ardasnturk.com/?lang=it">
+  <link rel="alternate" hreflang="pt-BR" href="https://funnelradar.ardasnturk.com/?lang=pt-BR">
+  <link rel="alternate" hreflang="ja" href="https://funnelradar.ardasnturk.com/?lang=ja">
+  <link rel="alternate" hreflang="ko" href="https://funnelradar.ardasnturk.com/?lang=ko">
+  <link rel="alternate" hreflang="zh-Hans" href="https://funnelradar.ardasnturk.com/?lang=zh-Hans">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Before first paint: the saved theme, and the class that hides elements waiting to animate in.
+    document.documentElement.classList.add('js');
+    window.PH_SITE = 'funnelradar';
+    window.PH_REPO = 'ardasnturk/funnelradar';
+    try { var t = localStorage.getItem(window.PH_SITE + '-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+    // The language too: its strings load before the body, so the page never flashes in English.
+    (function () {
+      var all = ['en', 'tr', 'de', 'es', 'fr', 'it', 'pt-BR', 'ja', 'ko', 'zh-Hans'];
+      function match(tag) {
+        tag = String(tag || '').toLowerCase();
+        for (var i = 0; i < all.length; i++) if (all[i].toLowerCase() === tag) return all[i];
+        if (/^zh/.test(tag)) return /hant|tw|hk|mo/.test(tag) ? null : 'zh-Hans';
+        var base = tag.split('-')[0];
+        return base === 'pt' ? 'pt-BR' : (all.indexOf(base) > -1 ? base : null);
+      }
+      var saved = null;
+      try { saved = localStorage.getItem(window.PH_SITE + '-lang'); } catch (e) {}
+      var wanted = [new URLSearchParams(location.search).get('lang'), saved].concat(navigator.languages || [navigator.language]);
+      var lang = 'en';
+      for (var i = 0; i < wanted.length; i++) { var m = match(wanted[i]); if (m) { lang = m; break; } }
+      window.PH_LANGS = all;
+      window.PH_LANG = lang;
+      window.PH_STRINGS = {};
+      if (lang !== 'en') document.write('<script src="i18n/' + lang + '.js"><\/script>');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="FunnelRadar">
+        <img src="assets/favicon.png" width="30" height="30" alt="">
+        <span>FunnelRadar</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections" data-i18n-attr="aria-label:nav.label">
+        <a href="#adds" data-i18n="nav.adds">What it adds</a>
+        <a href="#alerts" data-i18n="nav.alerts">Alerts</a>
+        <a href="#iphone" data-i18n="nav.iphone">iPhone</a>
+        <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="nav-tools">
+        <label class="lang">
+          <span class="visually-hidden" data-i18n="lang.label">Language</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg>
+          <select id="lang-select">
+            <option value="en">English</option>
+            <option value="tr">Türkçe</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="zh-Hans">简体中文</option>
+          </select>
+        </label>
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Switch theme" data-i18n-attr="aria-label:theme.toggle">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <a class="btn btn-small btn-primary nav-cta" href="#download" data-i18n="nav.download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="grid-lines" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <a class="news rv" href="#download">
+            <span class="news-tag" data-i18n="hero.new">For macOS</span>
+            <span data-i18n="hero.newText">A free, open-source menu bar app</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <h1 data-split data-i18n="hero.title">See where people <em>drop out</em>, from your menu bar.</h1>
+          <p class="lead rv" data-i18n="hero.lead">FunnelRadar sits in your Mac's menu bar and reads your <b>Mixpanel</b> projects: funnel leaks, retention, stickiness and unusual days, side by side.</p>
+          <div class="cta-row rv">
+            <a class="btn btn-primary btn-large" href="#download" id="hero-mac">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="i-apple"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"/></svg>
+              <span data-i18n="hero.ctaMac">Download for Mac</span>
+            </a>
+            <a class="btn btn-ghost btn-large" href="#adds" data-i18n="hero.ctaMore">See what it adds</a>
+          </div>
+          <ul class="hero-facts rv">
+            <li data-i18n="hero.fact1">Read-only</li>
+            <li data-i18n="hero.fact2">No server, no account</li>
+            <li data-i18n="hero.fact3">No analytics</li>
+            <li data-i18n="hero.fact4">Free and open source</li>
+          </ul>
+        </div>
+
+        <!-- A recreation of the app's menu with its made-up demo apps -->
+        <div class="desk" id="desk" aria-hidden="true">
+          <div class="menubar">
+            <svg class="i-apple" viewBox="0 0 24 24"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"/></svg>
+            <b>FunnelRadar</b>
+            <span class="menubar-right"><img class="menubar-icon" src="assets/favicon.png" alt=""><span>9:41</span></span>
+          </div>
+          <div class="window" id="hero-window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Kite Reader</span></div>
+            <div class="window-body">
+              <p class="window-title">Reader to Subscriber</p>
+              <p class="window-sub" data-i18n="mock.heading">Funnels, last 28 full days</p>
+              <div id="hero-funnel"></div>
+              <ul class="insights" id="hero-insights"></ul>
+            </div>
+          </div>
+          <div class="panel" id="panel">
+            <div class="panel-card panel-head">
+              <div class="panel-top"><b>FunnelRadar</b><span data-i18n="mock.ago">11 seconds ago</span></div>
+              <div class="panel-leak">
+                <span data-i18n="mock.leak">Biggest leak</span>
+                <b>Paywall Viewed → Subscribed</b>
+                <span id="hero-keeps"></span>
+              </div>
+              <div class="panel-stats">
+                <div><b>4</b><span data-i18n="mock.apps">apps</span></div>
+                <div><b>2</b><span data-i18n="mock.alerts">alerts</span></div>
+                <div><b id="hero-used">36/40</b><span data-i18n="mock.queries">queries this hour</span></div>
+              </div>
+            </div>
+            <div class="panel-card rows" id="hero-rows"></div>
+            <div class="alert-slot">
+              <div class="panel-card">
+                <div class="alert">
+                  <svg viewBox="0 0 24 24" style="stroke:var(--bad)"><path d="M6 6l12 12M18 9v9H9"/></svg>
+                  <div><b data-i18n="mock.alertTitle">Unusually quiet day · Kite Reader</b><span id="hero-alert-text"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Mixpanel</span><span>Funnels</span><span>D1 · D7 · D30</span><span>DAU/MAU</span><span>macOS</span><span>Homebrew</span><span>Remote Code</span><span>iPhone</span><span>iPad</span>
+          <span>Mixpanel</span><span>Funnels</span><span>D1 · D7 · D30</span><span>DAU/MAU</span><span>macOS</span><span>Homebrew</span><span>Remote Code</span><span>iPhone</span><span>iPad</span>
+          <span>Mixpanel</span><span>Funnels</span><span>D1 · D7 · D30</span><span>DAU/MAU</span><span>macOS</span><span>Homebrew</span><span>Remote Code</span><span>iPhone</span><span>iPad</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- What it adds -->
+    <section class="section" id="adds" aria-labelledby="adds-title">
+      <div class="wrap">
+        <header class="section-head rv">
+          <p class="kicker" data-i18n="adds.kicker">What it adds over Mixpanel's panels</p>
+          <h2 id="adds-title" data-i18n="adds.title">Mixpanel shows one report at a time. FunnelRadar answers three questions.</h2>
+          <p data-i18n="adds.lead">Where do people drop out, who comes back, and did anything strange happen yesterday? Your projects side by side, without clicking through panels. The numbers below are made up.</p>
+        </header>
+        <div class="bento">
+          <article class="tile tile-3 rv" data-spot>
+            <h3 data-i18n="t.table.t">Projects side by side</h3>
+            <p data-i18n="t.table.d">Each app with its own key event. Numbers are never added across projects: apps count different events and can share people.</p>
+            <table class="ptable">
+              <thead><tr>
+                <th data-i18n="col.app">App</th>
+                <th class="col-m" style="text-align:left" data-i18n="col.event">Key event</th>
+                <th data-i18n="col.daily">Daily users</th>
+                <th data-i18n="col.change">Change</th>
+                <th class="col-m" data-i18n="col.stick">Stickiness</th>
+                <th class="col-m">D7</th>
+                <th class="col-s" data-i18n="col.best">Best funnel</th>
+              </tr></thead>
+              <tbody id="ptable"></tbody>
+            </table>
+          </article>
+
+          <article class="tile tile-2 rv" data-spot>
+            <h3 data-i18n="t.leaks.t">Funnel leaks</h3>
+            <p data-i18n="t.leaks.d">The worst step of up to three saved funnels per project, worst first, with overall conversion against the period before.</p>
+            <div class="viz" id="viz-leaks"></div>
+          </article>
+          <article class="tile rv" data-spot>
+            <h3 data-i18n="t.ret.t">Retention D1, D7, D30</h3>
+            <p data-i18n="t.ret.d">From a pair of events you pick. A curve that flattens means people stay.</p>
+            <div class="viz" id="viz-ret"></div>
+          </article>
+
+          <article class="tile tile-wide rv" data-spot>
+            <div>
+              <h3 data-i18n="t.heat.t">Cohort heatmap</h3>
+              <p data-i18n="t.heat.d">Weekly cohorts by day. Blank cells are too young to know, so they never pull an average down.</p>
+            </div>
+            <div class="heat" id="viz-heat"></div>
+          </article>
+
+          <article class="tile tile-2 rv" data-spot>
+            <h3 data-i18n="t.index.t">Active users, compared</h3>
+            <p data-i18n="t.index.d">Each app as an index, so apps of any size can share one chart.</p>
+            <div class="viz" id="viz-index"></div>
+            <p class="small" id="viz-index-note" style="margin-top:8px"></p>
+          </article>
+          <article class="tile rv" data-spot>
+            <h3 data-i18n="t.movers.t">Biggest movers</h3>
+            <p data-i18n="t.movers.d">Your top events, this week against last week.</p>
+            <div class="viz" id="viz-movers"></div>
+          </article>
+
+          <article class="tile tile-2 rv" data-spot>
+            <h3 data-i18n="t.unusual.t">Unusual days</h3>
+            <p data-i18n="t.unusual.d">Days far from the 28 before them get marked. Today is partial and would always look like a dip, so nothing is worked out from it.</p>
+            <div class="viz" id="viz-unusual"></div>
+          </article>
+          <article class="tile rv" data-spot>
+            <h3 data-i18n="t.week.t">Weekday pattern</h3>
+            <p data-i18n="t.week.d">Each weekday against an average day, over the last 12 weeks.</p>
+            <div class="viz" id="viz-week"></div>
+          </article>
+
+          <article class="tile rv" data-spot>
+            <h3 data-i18n="t.stick.t">Stickiness</h3>
+            <p data-i18n="t.stick.d">DAU/MAU of your key event, per full month, using Mixpanel's own monthly uniques.</p>
+            <div class="viz" id="viz-stick"></div>
+          </article>
+          <article class="tile tile-2 rv" data-spot>
+            <h3 data-i18n="t.budget.t">Stays within Mixpanel's limits</h3>
+            <p data-i18n="t.budget.d">The Query API allows 60 queries an hour and 5 at once, shared with everything else on the project. FunnelRadar takes a small part of that, on a schedule.</p>
+            <div class="viz" id="viz-budget"></div>
+            <ul class="mini-list">
+              <li data-i18n="t.budget.p1">Never sends a query when you open a view</li>
+              <li data-i18n="t.budget.p2">Checks each project every 2 hours, which costs one query</li>
+              <li data-i18n="t.budget.p3">Reads the full reports once a day, about a dozen queries per app</li>
+              <li data-i18n="t.budget.p4">One query at a time, 5 seconds apart, at most 40 an hour (10 or 20 if you prefer)</li>
+              <li data-i18n="t.budget.p5">Backs off for 5 minutes to an hour on a 429</li>
+            </ul>
+          </article>
+        </div>
+        <ul class="pills rv">
+          <li data-i18n="pill.tz">Each project's own time zone</li>
+          <li data-i18n="pill.funnels">Up to three funnels per project</li>
+          <li data-i18n="pill.trend">Trend lines labelled as trends</li>
+          <li data-i18n="pill.langs">Ten languages</li>
+          <li data-i18n="pill.updates">Updates itself safely</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- The app -->
+    <section class="section" id="app" aria-labelledby="app-title">
+      <div class="wrap">
+        <header class="section-head rv">
+          <p class="kicker" data-i18n="app.kicker">In the app</p>
+          <h2 id="app-title" data-i18n="app.title">A native Mac window, one click from the menu bar.</h2>
+        </header>
+        <div class="shots rv">
+          <div class="frame">
+            <div class="window-bar"><i></i><i></i><i></i><span data-i18n="app.all">All apps</span></div>
+            <img src="assets/shots/portfolio.webp" width="1400" height="1043" alt="All apps compared in FunnelRadar" data-i18n-attr="alt:app.allAlt" loading="lazy">
+          </div>
+          <div class="frame">
+            <div class="window-bar"><i></i><i></i><i></i><span>Tempo Run</span></div>
+            <div class="frame-pan" id="pan"><img src="assets/shots/project.webp" width="1400" height="1981" alt="One app in detail" data-i18n-attr="alt:app.oneAlt" loading="lazy"></div>
+          </div>
+        </div>
+        <p class="shots-note" data-i18n="app.note">Screenshots use FunnelRadar's made-up demo apps.</p>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="section" id="alerts" aria-labelledby="alerts-title">
+      <div class="wrap">
+        <header class="section-head rv">
+          <p class="kicker" data-i18n="alerts.kicker">Alerts</p>
+          <h2 id="alerts-title" data-i18n="alerts.title">Hear about it before you go looking.</h2>
+          <p data-i18n="alerts.lead">Notifications on your Mac with your own thresholds, each one once.</p>
+        </header>
+        <div class="alerts-grid">
+          <ul class="alert-kinds rv">
+            <li class="switch-row"><span data-i18n="alerts.k1">Falling conversion</span><i class="switch"></i></li>
+            <li class="switch-row"><span data-i18n="alerts.k2">Unusually busy days</span><i class="switch"></i></li>
+            <li class="switch-row"><span data-i18n="alerts.k3">Unusually quiet days</span><i class="switch"></i></li>
+            <li class="switch-row"><span data-i18n="alerts.k4">Falling retention</span><i class="switch"></i></li>
+          </ul>
+          <div class="notif-stage rv" id="notifs" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- iPhone -->
+    <section class="section" id="iphone" aria-labelledby="iphone-title">
+      <div class="wrap">
+        <div class="iphone-grid">
+          <div class="rv" aria-hidden="true">
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="phone-island"></div>
+                <div class="phone-banner" id="phone-banner">
+                  <img src="assets/favicon.png" width="30" height="30" alt="">
+                  <div><b data-i18n="mock.alertTitle">Unusually quiet day · Kite Reader</b><span id="phone-alert-text"></span></div>
+                </div>
+                <p class="phone-title">FunnelRadar</p>
+                <div class="panel-card panel-head">
+                  <div class="panel-leak">
+                    <span data-i18n="mock.leak">Biggest leak</span>
+                    <b>Paywall Viewed → Subscribed</b>
+                    <span id="phone-keeps"></span>
+                  </div>
+                  <div class="panel-stats">
+                    <div><b>4</b><span data-i18n="mock.apps">apps</span></div>
+                    <div><b>2</b><span data-i18n="mock.alerts">alerts</span></div>
+                    <div><b>36/40</b><span data-i18n="mock.queries">queries this hour</span></div>
+                  </div>
+                </div>
+                <div class="panel-card rows" id="phone-rows"></div>
+                <div class="panel-card phone-chart" id="phone-ret"></div>
+                <div class="panel-card phone-chart" id="phone-funnel"></div>
+                <div class="phone-tabs"><span>Remote Code</span><span class="on">FunnelRadar</span></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <header class="section-head rv" style="margin-bottom:32px">
+              <p class="kicker" data-i18n="ios.kicker">Remote Code on iPhone</p>
+              <h2 id="iphone-title" data-i18n="ios.title">Your funnels, in your pocket.</h2>
+              <p data-i18n="ios.lead">Remote Code brings FunnelRadar to your iPhone and iPad as a tab.</p>
+            </header>
+            <div class="points">
+              <div class="rv"><h3 data-i18n="ios.p1.t">Installed from Remote Code</h3><p data-i18n="ios.p1.d">Install FunnelRadar and switch it on in Remote Code's settings, on the Mac or the iPhone.</p></div>
+              <div class="rv"><h3 data-i18n="ios.p2.t">The app doesn't have to be open</h3><p data-i18n="ios.p2.d">Remote Code starts FunnelRadar's hub on the Mac when the app isn't running. Two engines never share the query budget.</p></div>
+              <div class="rv"><h3 data-i18n="ios.p3.t">Stays on your devices</h3><p data-i18n="ios.p3.d">The hub listens on <code>127.0.0.1</code> only, its token is in a <code>0600</code> file, and the phone reaches it over Remote Code's encrypted link.</p></div>
+            </div>
+            <a class="link-arrow rv" href="https://rcode.ardasnturk.com" rel="noopener"><span data-i18n="ios.more">Explore Remote Code</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Setup -->
+    <section class="section setup" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <header class="section-head rv">
+          <p class="kicker" data-i18n="how.kicker">Setup</p>
+          <h2 id="how-title" data-i18n="how.title">Four steps, and it opens.</h2>
+        </header>
+        <ol class="steps" id="steps">
+          <li class="step rv">
+            <span class="step-num">1</span>
+            <h3 data-i18n="how.s1.t">The Mixpanel tool</h3>
+            <p data-i18n="how.s1.d">FunnelRadar reads your data through <code>mp</code>, Mixpanel's official open-source CLI, and installs a pinned version into its own folder, about 300 MB. That needs Python 3.10 or newer; it uses <code>uv</code> if you have it, then your <code>python3</code>, then Homebrew.</p>
+          </li>
+          <li class="step rv">
+            <span class="step-num">2</span>
+            <h3 data-i18n="how.s2.t">Sign in</h3>
+            <p data-i18n="how.s2.d">Your browser opens Mixpanel, and <code>mp</code> keeps the sign-in in FunnelRadar's folder, apart from any <code>mp</code> you use in a terminal. A service account works too.</p>
+          </li>
+          <li class="step rv">
+            <span class="step-num">3</span>
+            <h3 data-i18n="how.s3.t">Your apps</h3>
+            <p data-i18n="how.s3.d">Pick the projects to follow, then each one's key event and retention events in Settings. The first full read takes about a minute per app.</p>
+          </li>
+          <li class="step rv">
+            <span class="step-num">4</span>
+            <h3 data-i18n="how.s4.t">Notifications</h3>
+            <p data-i18n="how.s4.d">Optional. Turn on the alerts you want and set your thresholds.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section security" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap">
+        <header class="section-head rv">
+          <p class="kicker" data-i18n="sec.kicker">Privacy</p>
+          <h2 id="privacy-title" data-i18n="sec.title">Your numbers go to your Mac. Nowhere else.</h2>
+          <p data-i18n="sec.lead">Your data travels between your Mac and Mixpanel through the official CLI. FunnelRadar has no server, no account of its own and no analytics.</p>
+        </header>
+        <div class="tunnel rv" aria-hidden="true">
+          <span class="tunnel-end">Mac</span>
+          <div class="tunnel-line"><i></i><i></i><i></i><b>mp</b></div>
+          <span class="tunnel-end">Mixpanel</span>
+        </div>
+        <div class="sec-grid">
+          <div class="sec-item rv">
+            <h3 data-i18n="sec.read.t">Read-only</h3>
+            <p data-i18n="sec.read.d"><code>mp</code> can create dashboards, change flags and delete things. FunnelRadar's source protocol only has reads, so a mistake can't touch your account.</p>
+          </div>
+          <div class="sec-item rv">
+            <h3 data-i18n="sec.none.t">No server, no account</h3>
+            <p data-i18n="sec.none.d">There is nothing to sign up for, and nothing of yours on a server of ours. There is no such server.</p>
+          </div>
+          <div class="sec-item rv">
+            <h3 data-i18n="sec.cli.t">The official CLI holds the sign-in</h3>
+            <p data-i18n="sec.cli.d"><code>mp</code> does the sign-in and token refresh, in FunnelRadar's own folder. Signing out here doesn't touch an <code>mp</code> you use in a terminal.</p>
+          </div>
+          <div class="sec-item rv">
+            <h3 data-i18n="sec.key.t">Secrets stay in the Keychain</h3>
+            <p data-i18n="sec.key.d">A service account's secret stays in your Keychain and reaches <code>mp</code> through its environment, never a config file.</p>
+          </div>
+          <div class="sec-item rv">
+            <h3 data-i18n="sec.ana.t">No analytics</h3>
+            <p data-i18n="sec.ana.d">FunnelRadar makes no other requests, apart from installing <code>mp</code> during setup and the update check.</p>
+          </div>
+          <div class="sec-item rv">
+            <h3 data-i18n="sec.cache.t">Cached on your Mac</h3>
+            <p data-i18n="sec.cache.d">Everything is kept in <code>~/Library/Application Support/FunnelRadar</code>, in folders only you can read.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="section download" id="download" aria-labelledby="download-title">
+      <div class="aurora aurora-soft" aria-hidden="true"><i></i><i></i></div>
+      <div class="wrap">
+        <header class="section-head center rv">
+          <img class="dl-icon" src="assets/icon-512.png" width="96" height="96" alt="">
+          <h2 id="download-title" data-i18n="dl.title">Get FunnelRadar.</h2>
+          <p data-i18n="dl.lead">Free and open source, under the MIT license.</p>
+        </header>
+        <div class="dl-grid">
+          <div class="dl-card rv">
+            <div class="dl-head">
+              <h3 data-i18n="dl.mac.t">FunnelRadar for Mac</h3>
+              <p class="muted" data-i18n="dl.mac.req">macOS 15 Sequoia or later · a Mixpanel account</p>
+            </div>
+            <a class="btn btn-primary btn-block" id="dmg-link" href="https://github.com/ardasnturk/funnelradar/releases/latest">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="i-apple"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"/></svg>
+              <span data-i18n="dl.mac.btn">Download for Mac</span>
+            </a>
+            <p class="dl-meta muted" aria-live="polite"><span data-i18n="dl.mac.meta">Signed with Developer ID and notarized by Apple.</span> <span id="dmg-version"></span></p>
+            <div class="dl-label-row">
+              <p class="dl-label" data-i18n="dl.brew">Or with Homebrew:</p>
+              <button type="button" class="copy-btn" data-copy="brew-cmd" data-i18n="copy">Copy</button>
+            </div>
+            <div class="code-block"><pre><code id="brew-cmd">brew tap ardasnturk/funnelradar https://github.com/ardasnturk/funnelradar
+brew install --cask funnelradar</code></pre></div>
+          </div>
+          <div class="dl-card rv">
+            <div class="dl-head">
+              <h3 data-i18n="dl.family.t">From the same workshop</h3>
+              <p class="muted" data-i18n="dl.family.d">Free Mac apps that work together.</p>
+            </div>
+            <div class="family">
+              <a href="https://mrradar.ardasnturk.com" rel="noopener"><img src="assets/family/mrradar.png" width="44" height="44" alt=""><div><b>MRRadar</b><span data-i18n="dl.family.sib">All your subscription apps on one radar, for RevenueCat.</span></div></a>
+              <a href="https://rcode.ardasnturk.com" rel="noopener"><img src="assets/family/remote-code.png" width="44" height="44" alt=""><div><b>Remote Code</b><span data-i18n="dl.family.rc">The home of your coding agents on the Mac, with an iPhone app.</span></div></a>
+            </div>
+            <div class="dl-label-row">
+              <p class="dl-label" data-i18n="dl.demo">Try it without an account:</p>
+              <button type="button" class="copy-btn" data-copy="demo-cmd" data-i18n="copy">Copy</button>
+            </div>
+            <div class="code-block"><pre><code id="demo-cmd">open -a FunnelRadar --args --demo</code></pre></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap wrap-narrow">
+        <header class="section-head rv">
+          <p class="kicker" data-i18n="faq.kicker">FAQ</p>
+          <h2 id="faq-title" data-i18n="faq.title">Questions &amp; answers</h2>
+        </header>
+        <div class="faq rv">
+          <details>
+            <summary data-i18n="faq.q1">What do I need?</summary>
+            <p data-i18n="faq.a1">macOS 15 or newer and a Mixpanel account. FunnelRadar itself is free.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">Can FunnelRadar change anything in my Mixpanel account?</summary>
+            <p data-i18n="faq.a2">No. <code>mp</code> can change things, but FunnelRadar's source protocol has no way to ask it to.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">Will it use up my query limit?</summary>
+            <p data-i18n="faq.a3">It stays at 40 queries an hour or fewer, one at a time, and counts them across restarts. A full read of one app is about a dozen queries, so above about three apps the first read spreads over more than an hour. A 429 stops the read and it waits.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">Why is the download about 300 MB during setup?</summary>
+            <p data-i18n="faq.a4">That's <code>mp</code>, which FunnelRadar installs at a pinned version into its own folder, so nothing else on your Mac changes. The CLI is a pre-release and a new version may change its output.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q5">Has it been tested on real data?</summary>
+            <p data-i18n="faq.a5">Not yet. This is an early release, built from the CLI's source and documentation, and it hasn't run against a real account. If a number looks wrong, D1, D7 and D30 being a day off is the first thing to check. Please open an issue.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q6">Why are the newest funnel days left out?</summary>
+            <p data-i18n="faq.a6">Someone who entered a funnel yesterday may still convert, so a period ending yesterday always looks worse. Both 28-day periods stop 7 days before the last full day, which delays a real fall by a week.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q7">Why aren't my projects added together?</summary>
+            <p data-i18n="faq.a7">Projects count different key events and can share people, so a total would mean nothing. The overview compares them as an index instead.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q8">Can I try it without an account?</summary>
+            <p data-i18n="faq.a8">Yes. Run <code>open -a FunnelRadar --args --demo</code> to open it with made-up apps.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q9">Do I need Remote Code?</summary>
+            <p data-i18n="faq.a9">Only for the iPhone and iPad. FunnelRadar works on its own on the Mac.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q10">How do I uninstall?</summary>
+            <p data-i18n="faq.a10">Quit FunnelRadar and delete it (or <code>brew uninstall --zap --cask funnelradar</code>). Remove <code>~/Library/Application Support/FunnelRadar</code> for a clean slate.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q11">Is this made by Mixpanel?</summary>
+            <p data-i18n="faq.a11">No. FunnelRadar is an independent project that uses Mixpanel's official CLI. It is not affiliated with or endorsed by Mixpanel.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="brand" href="#top" aria-label="FunnelRadar">
+          <img src="assets/favicon.png" width="28" height="28" alt="">
+          <span>FunnelRadar</span>
+        </a>
+        <nav class="footer-links" aria-label="Footer" data-i18n-attr="aria-label:footer.label">
+          <a href="https://mrradar.ardasnturk.com" rel="noopener">MRRadar</a>
+          <a href="https://rcode.ardasnturk.com" rel="noopener">Remote Code</a>
+          <a id="source-link" href="https://github.com/ardasnturk/funnelradar" rel="noopener">GitHub</a>
+          <a id="releases-link" href="https://github.com/ardasnturk/funnelradar/releases" data-i18n="footer.releases">Releases</a>
+          <a id="issues-link" href="https://github.com/ardasnturk/funnelradar/issues" data-i18n="footer.issues">Issues</a>
+        </nav>
+      </div>
+      <p class="notice" data-i18n="footer.notice"><b>FunnelRadar works with Mixpanel.</b> It is an independent project and is <b>not affiliated with, endorsed by or sponsored by Mixpanel</b>.</p>
+      <p class="small muted" data-i18n="footer.tm">Mixpanel is a trademark of its owner, used here only to describe compatibility. App names and numbers on this page are made up.</p>
+      <p class="small muted">© 2026 Arda Şentürk · <span data-i18n="footer.notrack">This site uses no cookies and no analytics.</span></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="charts.js"></script>
+</body>
+</html>
