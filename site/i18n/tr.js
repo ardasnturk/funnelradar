@@ -137,7 +137,7 @@ window.PH_STRINGS["tr"] = {
   "faq.q4": "Kurulum sırasında indirme neden yaklaşık 300 MB?",
   "faq.a4": "Bu, FunnelRadar'ın sabitlenmiş bir sürümüyle kendi klasörüne kurduğu <code>mp</code>'dir; böylece Mac'inizde başka hiçbir şey değişmez. CLI bir ön sürümdür ve yeni bir sürüm çıktısını değiştirebilir.",
   "faq.q5": "Gerçek veriyle denendi mi?",
-  "faq.a5": "Henüz değil. Bu erken bir sürümdür; CLI'ın kaynağından ve belgelerinden geliştirildi ve gerçek bir hesapta çalıştırılmadı. Bir rakam yanlış görünürse ilk bakılacak şey D1, D7 ve D30'un bir gün kaymış olmasıdır. Lütfen bir sorun açın.",
+  "faq.a5": "Evet, küçük ve canlı bir projede: giriş, projeler, event'ler, retention ve hub çalışıyor. O projede kayıtlı funnel olmadığı için funnel okuma henüz gerçek veriyle denenmedi. Bir rakam yanlış görünürse lütfen bir sorun açın.",
   "faq.q6": "En yeni huni günleri neden dışarıda bırakılıyor?",
   "faq.a6": "Dün bir huniye giren biri hâlâ dönüşebilir, bu yüzden dün biten bir dönem hep daha kötü görünür. İki 28 günlük dönem de son tam günden 7 gün önce biter; bu, gerçek bir düşüşü bir hafta geciktirir.",
   "faq.q7": "Projelerim neden toplanmıyor?",

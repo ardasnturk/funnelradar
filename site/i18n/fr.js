@@ -137,7 +137,7 @@ window.PH_STRINGS["fr"] = {
   "faq.q4": "Pourquoi le téléchargement fait-il environ 300 Mo pendant l’installation ?",
   "faq.a4": "C’est <code>mp</code>, que FunnelRadar installe en version figée dans son propre dossier, pour que rien d’autre ne change sur votre Mac. La CLI est une préversion et une nouvelle version peut modifier sa sortie.",
   "faq.q5": "A-t-il été testé sur des données réelles ?",
-  "faq.a5": "Pas encore. C’est une version préliminaire, construite d’après le code source et la documentation de la CLI, et elle n’a jamais tourné sur un vrai compte. Si un chiffre semble faux, vérifiez d’abord si D1, D7 et D30 ont un jour de décalage. Merci d’ouvrir un ticket.",
+  "faq.a5": "Oui, sur un petit projet réel : la connexion, les projets, les événements, la rétention et le hub fonctionnent. La lecture des funnels n'a pas encore été testée sur de vraies données, car ce projet n'en a aucun d'enregistré. Si un chiffre semble faux, ouvrez un ticket.",
   "faq.q6": "Pourquoi les derniers jours d’entonnoir sont-ils écartés ?",
   "faq.a6": "Quelqu’un entré dans un entonnoir hier peut encore convertir, donc une période qui se termine hier paraît toujours pire. Les deux périodes de 28 jours s’arrêtent 7 jours avant le dernier jour complet, ce qui retarde d’une semaine une vraie baisse.",
   "faq.q7": "Pourquoi mes projets ne sont-ils pas additionnés ?",

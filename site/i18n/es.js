@@ -137,7 +137,7 @@ window.PH_STRINGS["es"] = {
   "faq.q4": "¿Por qué la descarga es de unos 300 MB durante la configuración?",
   "faq.a4": "Es <code>mp</code>, que FunnelRadar instala en una versión fija en su propia carpeta, para que nada más cambie en tu Mac. La CLI es una versión preliminar y una versión nueva puede cambiar su salida.",
   "faq.q5": "¿Se ha probado con datos reales?",
-  "faq.a5": "Todavía no. Es una versión temprana, construida a partir del código fuente y la documentación de la CLI, y no se ha ejecutado con una cuenta real. Si un número parece mal, que D1, D7 y D30 estén desfasados un día es lo primero que hay que comprobar. Abre una incidencia, por favor.",
+  "faq.a5": "Sí, en un proyecto real pequeño: el inicio de sesión, los proyectos, los eventos, la retención y el hub funcionan. La lectura de embudos aún no se ha probado con datos reales porque ese proyecto no tiene ninguno guardado. Si un número parece incorrecto, abre una incidencia.",
   "faq.q6": "¿Por qué se dejan fuera los días más recientes del embudo?",
   "faq.a6": "Quien entró en un embudo ayer aún puede convertir, así que un periodo que termina ayer siempre parece peor. Los dos periodos de 28 días terminan 7 días antes del último día completo, lo que retrasa una caída real una semana.",
   "faq.q7": "¿Por qué no se suman mis proyectos?",

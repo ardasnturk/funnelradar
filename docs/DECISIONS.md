@@ -53,7 +53,7 @@ Each funnel costs 2 queries, so at most 3 per project are read. `mp inspect funn
 ## D-009 — Retention cells
 **Status:** accepted
 
-The CLI documents `retention[n]` as period n, with `.retention[7]` as day 7, so D1/D7/D30 are elements 1, 7 and 30, asked for with `--intervals 31`. This is the assumption most worth checking on real data: if the first element turns out to be day 1, every retention number is one day off.
+The CLI documents `retention[n]` as period n, with `.retention[7]` as day 7, so D1/D7/D30 are elements 1, 7 and 30, asked for with `--intervals 31`. A live project confirmed it: a cohort's list grows by one element a day, so element n is day n. Element 0 is the day itself and needn't be 1, because the first event doesn't count as a return.
 
 A cohort too young to have reached day n stays out of that day's average, because Mixpanel can report it as 0 and that would pull the number down. Averages are weighted by cohort size.
 

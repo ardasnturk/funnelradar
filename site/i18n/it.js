@@ -137,7 +137,7 @@ window.PH_STRINGS["it"] = {
   "faq.q4": "Perché il download è di circa 300 MB durante la configurazione?",
   "faq.a4": "È <code>mp</code>, che FunnelRadar installa in una versione fissata nella propria cartella, così nient'altro sul Mac cambia. La CLI è una pre-release e una nuova versione potrebbe cambiarne l'output.",
   "faq.q5": "È stata provata su dati reali?",
-  "faq.a5": "Non ancora. È una versione iniziale, costruita dal codice sorgente e dalla documentazione della CLI, e non è mai stata eseguita su un account reale. Se un numero sembra sbagliato, la prima cosa da controllare è se D1, D7 e D30 sono sfasati di un giorno. Apri una segnalazione.",
+  "faq.a5": "Sì, su un piccolo progetto reale: accesso, progetti, eventi, retention e hub funzionano. La lettura dei funnel non è ancora stata provata su dati reali, perché quel progetto non ne ha di salvati. Se un numero sembra sbagliato, apri una segnalazione.",
   "faq.q6": "Perché gli ultimi giorni dei funnel sono esclusi?",
   "faq.a6": "Chi è entrato in un funnel ieri potrebbe ancora convertire, quindi un periodo che finisce ieri sembra sempre peggiore. Entrambi i periodi di 28 giorni si fermano 7 giorni prima dell'ultimo giorno intero, e questo ritarda di una settimana un calo reale.",
   "faq.q7": "Perché i miei progetti non vengono sommati?",

@@ -137,7 +137,7 @@ window.PH_STRINGS["pt-BR"] = {
  "faq.q4": "Por que o download tem cerca de 300 MB durante a configuração?",
  "faq.a4": "Esse é o <code>mp</code>, que o FunnelRadar instala numa versão fixa em sua própria pasta, para que nada mais no seu Mac mude. A CLI é uma pré-versão e uma nova versão pode mudar sua saída.",
  "faq.q5": "Foi testado com dados reais?",
- "faq.a5": "Ainda não. Esta é uma versão inicial, feita a partir do código-fonte e da documentação da CLI, e não rodou com uma conta real. Se um número parecer errado, D1, D7 e D30 com um dia de diferença é a primeira coisa a verificar. Por favor, abra uma issue.",
+ "faq.a5": "Sim, em um pequeno projeto real: login, projetos, eventos, retenção e o hub funcionam. A leitura de funis ainda não foi testada com dados reais, pois esse projeto não tem nenhum salvo. Se um número parecer errado, abra uma issue.",
  "faq.q6": "Por que os dias mais recentes do funil ficam de fora?",
  "faq.a6": "Quem entrou num funil ontem ainda pode converter, então um período que termina ontem sempre parece pior. Os dois períodos de 28 dias terminam 7 dias antes do último dia completo, o que atrasa em uma semana uma queda real.",
  "faq.q7": "Por que meus projetos não são somados?",
