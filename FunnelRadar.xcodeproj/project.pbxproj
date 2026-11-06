@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060D9C54493F6C718FC4F46F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6582BCC47E88B7A31A17331 /* SettingsView.swift */; };
+		0688DAEE1E786C82FAC229EB /* FunnelRadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FD74F924C9427A7F3014C /* FunnelRadarApp.swift */; };
+		2464DA5AE09EC2CB440FD178 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1316021A77D025ABA83C4EEE /* main.swift */; };
+		46326782A8E4CDEA105F8BFD /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52931DB8F9FF90739881B2B8 /* DashboardView.swift */; };
+		51A8154D1301C55AD372EEC9 /* MenuPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF0451E9A167A5230FFC5B /* MenuPanel.swift */; };
+		52B2F986605D4C0A78ABACED /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4C472052FF1539FE7EB04 /* Notifier.swift */; };
+		6E18D69F927431DFC4235809 /* FunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9C46903C9CB16FCF3B2B99E /* FunnelKit */; };
+		7731B3351A823873C26B6D55 /* FunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 623CE151FF3B8E07BBF47575 /* FunnelKit */; };
+		77F5E4E3246BF5F9D4B6F474 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A81F9FBE6278CF44784C6 /* AppModel.swift */; };
+		7B968CB7A5A6B20B5EBEC9BA /* funnelradar-cli in Embed Dependencies */ = {isa = PBXBuildFile; fileRef = CF6D0A2AE77758592B1AB08F /* funnelradar-cli */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		896C01ECAD8B222F03B9FCEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6FDCBAD0C7406E1D7E6AF1 /* Assets.xcassets */; };
+		939C04C5FD987AD22381ED5F /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E062CD7857D095F24221EF09 /* ProjectView.swift */; };
+		9E6FD57D10F884F2E521AE75 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09D2DCA1B8B9689C4A12086 /* PortfolioView.swift */; };
+		A7BBA403FC53D3DAFE9141D2 /* Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F30B09939D5B71F3E7C548 /* Snapshots.swift */; };
+		AAF627F87FFC63E6E7FCCD99 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021BD606E9B59FB1F9DB4AE /* SettingsWindow.swift */; };
+		BE31084388CB070767D67ACD /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD8F5E6761054AD5E4081D /* Format.swift */; };
+		D8236088FB607163DD97BFB9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A70F05EAA8DB7FEF8F0BF /* OnboardingView.swift */; };
+		E2DFF833688897CFFCB782DC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4BF2D3A5814BA7D190E22CD0 /* Localizable.xcstrings */; };
+		EB77CA9A0F6509A67DCDC1FA /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D3C9AB879DAED7FB2F115 /* Design.swift */; };
+		F77C7ACA585F17BB9D85CCEE /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51C9414494DD4EEA590BE0 /* LaunchAtLogin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B37DEC0F9D0C3ACD26D5AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71747B1A432B153868EF1E66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A215F0C1EE0C863941B47D3;
+			remoteInfo = "funnelradar-cli";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56527B2485059EB5563FB778 /* Embed Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				7B968CB7A5A6B20B5EBEC9BA /* funnelradar-cli in Embed Dependencies */,
+			);
+			name = "Embed Dependencies";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		073A70F05EAA8DB7FEF8F0BF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1316021A77D025ABA83C4EEE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		19F4C472052FF1539FE7EB04 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		240A81F9FBE6278CF44784C6 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		26EB066284DA413C177433EC /* FunnelRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnelRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF2D3A5814BA7D190E22CD0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		52931DB8F9FF90739881B2B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		540D3C9AB879DAED7FB2F115 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		6E51C9414494DD4EEA590BE0 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
+		76DF0451E9A167A5230FFC5B /* MenuPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPanel.swift; sourceTree = "<group>"; };
+		76F30B09939D5B71F3E7C548 /* Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshots.swift; sourceTree = "<group>"; };
+		8F8FD74F924C9427A7F3014C /* FunnelRadarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnelRadarApp.swift; sourceTree = "<group>"; };
+		A021BD606E9B59FB1F9DB4AE /* SettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindow.swift; sourceTree = "<group>"; };
+		A09D2DCA1B8B9689C4A12086 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		A2AD8F5E6761054AD5E4081D /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		A6582BCC47E88B7A31A17331 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF6D0A2AE77758592B1AB08F /* funnelradar-cli */ = {isa = PBXFileReference; includeInIndex = 0; path = "funnelradar-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E062CD7857D095F24221EF09 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		E6B50375C908C0153695B16B /* FunnelKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FunnelKit; path = FunnelKit; sourceTree = SOURCE_ROOT; };
+		FF6FDCBAD0C7406E1D7E6AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74A8DDE6D0964C295D95638D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7731B3351A823873C26B6D55 /* FunnelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6BBD20F3E12C26EAD9AA91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E18D69F927431DFC4235809 /* FunnelKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27F992919EBDBD0E928A09F7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E6B50375C908C0153695B16B /* FunnelKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		46949D7B13F0D5DB48335E7B /* FunnelKit */ = {
+			isa = PBXGroup;
+			children = (
+				978156D6F5277A54A28B2874 /* Sources */,
+			);
+			path = FunnelKit;
+			sourceTree = "<group>";
+		};
+		46DCC9BA7FC952BE6301BA55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF6FDCBAD0C7406E1D7E6AF1 /* Assets.xcassets */,
+				4BF2D3A5814BA7D190E22CD0 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C11F5C4A711A03418CECD2F /* funnelradar-hub */ = {
+			isa = PBXGroup;
+			children = (
+				1316021A77D025ABA83C4EEE /* main.swift */,
+			);
+			path = "funnelradar-hub";
+			sourceTree = "<group>";
+		};
+		53F84B7094435A31CE46A108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D0A2AE77758592B1AB08F /* funnelradar-cli */,
+				26EB066284DA413C177433EC /* FunnelRadar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7998A61189FE2CECBB986F48 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				240A81F9FBE6278CF44784C6 /* AppModel.swift */,
+				8F8FD74F924C9427A7F3014C /* FunnelRadarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		978156D6F5277A54A28B2874 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4C11F5C4A711A03418CECD2F /* funnelradar-hub */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9E3F284D71C89CA987FFFDC9 = {
+			isa = PBXGroup;
+			children = (
+				46949D7B13F0D5DB48335E7B /* FunnelKit */,
+				C0D5066D9AA7FDAB05CFA7C0 /* FunnelRadar */,
+				27F992919EBDBD0E928A09F7 /* Packages */,
+				53F84B7094435A31CE46A108 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0D5066D9AA7FDAB05CFA7C0 /* FunnelRadar */ = {
+			isa = PBXGroup;
+			children = (
+				7998A61189FE2CECBB986F48 /* App */,
+				46DCC9BA7FC952BE6301BA55 /* Resources */,
+				D15CDC185917C68A6E90C4E9 /* Support */,
+				DC6A19E32E6655D0B70F21D0 /* Views */,
+			);
+			path = FunnelRadar;
+			sourceTree = "<group>";
+		};
+		D15CDC185917C68A6E90C4E9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A2AD8F5E6761054AD5E4081D /* Format.swift */,
+				6E51C9414494DD4EEA590BE0 /* LaunchAtLogin.swift */,
+				19F4C472052FF1539FE7EB04 /* Notifier.swift */,
+				A021BD606E9B59FB1F9DB4AE /* SettingsWindow.swift */,
+				76F30B09939D5B71F3E7C548 /* Snapshots.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D6E24F463D45065BD75C97D1 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				52931DB8F9FF90739881B2B8 /* DashboardView.swift */,
+				A09D2DCA1B8B9689C4A12086 /* PortfolioView.swift */,
+				E062CD7857D095F24221EF09 /* ProjectView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		DC6A19E32E6655D0B70F21D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6E24F463D45065BD75C97D1 /* Dashboard */,
+				FD48B22052611DEAB9CD5A0B /* Onboarding */,
+				540D3C9AB879DAED7FB2F115 /* Design.swift */,
+				76DF0451E9A167A5230FFC5B /* MenuPanel.swift */,
+				A6582BCC47E88B7A31A17331 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD48B22052611DEAB9CD5A0B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				073A70F05EAA8DB7FEF8F0BF /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E11E4E2B38C4D52FFE1D4A8 /* FunnelRadar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942899047D9D61E41A073B58 /* Build configuration list for PBXNativeTarget "FunnelRadar" */;
+			buildPhases = (
+				7905D750C1A5F9E9C9562999 /* Sources */,
+				02D2D676E6B2ED1BF575825C /* Resources */,
+				CD6BBD20F3E12C26EAD9AA91 /* Frameworks */,
+				56527B2485059EB5563FB778 /* Embed Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B68301AE27E2940ABE1231D /* PBXTargetDependency */,
+			);
+			name = FunnelRadar;
+			packageProductDependencies = (
+				F9C46903C9CB16FCF3B2B99E /* FunnelKit */,
+			);
+			productName = FunnelRadar;
+			productReference = 26EB066284DA413C177433EC /* FunnelRadar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A215F0C1EE0C863941B47D3 /* funnelradar-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4C3D5F5AF81DD4078490976 /* Build configuration list for PBXNativeTarget "funnelradar-cli" */;
+			buildPhases = (
+				E6DA47F440CF798F04CEDD5F /* Sources */,
+				74A8DDE6D0964C295D95638D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "funnelradar-cli";
+			packageProductDependencies = (
+				623CE151FF3B8E07BBF47575 /* FunnelKit */,
+			);
+			productName = "funnelradar-cli";
+			productReference = CF6D0A2AE77758592B1AB08F /* funnelradar-cli */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71747B1A432B153868EF1E66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = EA4ECE56909402E64358EC72 /* Build configuration list for PBXProject "FunnelRadar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				"pt-BR",
+				tr,
+				"zh-Hans",
+			);
+			mainGroup = 9E3F284D71C89CA987FFFDC9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				43345A236B79E83141875E51 /* XCLocalSwiftPackageReference "FunnelKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 53F84B7094435A31CE46A108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E11E4E2B38C4D52FFE1D4A8 /* FunnelRadar */,
+				9A215F0C1EE0C863941B47D3 /* funnelradar-cli */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02D2D676E6B2ED1BF575825C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896C01ECAD8B222F03B9FCEA /* Assets.xcassets in Resources */,
+				E2DFF833688897CFFCB782DC /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7905D750C1A5F9E9C9562999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F5E4E3246BF5F9D4B6F474 /* AppModel.swift in Sources */,
+				46326782A8E4CDEA105F8BFD /* DashboardView.swift in Sources */,
+				EB77CA9A0F6509A67DCDC1FA /* Design.swift in Sources */,
+				BE31084388CB070767D67ACD /* Format.swift in Sources */,
+				0688DAEE1E786C82FAC229EB /* FunnelRadarApp.swift in Sources */,
+				F77C7ACA585F17BB9D85CCEE /* LaunchAtLogin.swift in Sources */,
+				51A8154D1301C55AD372EEC9 /* MenuPanel.swift in Sources */,
+				52B2F986605D4C0A78ABACED /* Notifier.swift in Sources */,
+				D8236088FB607163DD97BFB9 /* OnboardingView.swift in Sources */,
+				9E6FD57D10F884F2E521AE75 /* PortfolioView.swift in Sources */,
+				939C04C5FD987AD22381ED5F /* ProjectView.swift in Sources */,
+				060D9C54493F6C718FC4F46F /* SettingsView.swift in Sources */,
+				AAF627F87FFC63E6E7FCCD99 /* SettingsWindow.swift in Sources */,
+				A7BBA403FC53D3DAFE9141D2 /* Snapshots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DA47F440CF798F04CEDD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2464DA5AE09EC2CB440FD178 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B68301AE27E2940ABE1231D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A215F0C1EE0C863941B47D3 /* funnelradar-cli */;
+			targetProxy = 2B37DEC0F9D0C3ACD26D5AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02775B22A638831A55B24968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		28D67BD502D7401260B10A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FunnelRadar;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Arda Sentürk";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jastech.funnelradar;
+				PRODUCT_NAME = FunnelRadar;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5B1ED03CE0CF018712E262F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		5D5472FFDC8FAFFBC35AA568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5JMD3VSD7N;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FunnelRadar;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Arda Sentürk";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jastech.funnelradar;
+				PRODUCT_NAME = FunnelRadar;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		74AFFBDBD3CBCE40DF6E4B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5JMD3VSD7N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jastech.funnelradar.cli;
+				PRODUCT_NAME = "funnelradar-hub";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AC5832BC444D34BB0444E965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jastech.funnelradar.cli;
+				PRODUCT_NAME = "funnelradar-hub";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		942899047D9D61E41A073B58 /* Build configuration list for PBXNativeTarget "FunnelRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D67BD502D7401260B10A48 /* Debug */,
+				5D5472FFDC8FAFFBC35AA568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4C3D5F5AF81DD4078490976 /* Build configuration list for PBXNativeTarget "funnelradar-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5832BC444D34BB0444E965 /* Debug */,
+				74AFFBDBD3CBCE40DF6E4B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA4ECE56909402E64358EC72 /* Build configuration list for PBXProject "FunnelRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1ED03CE0CF018712E262F6 /* Debug */,
+				02775B22A638831A55B24968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		43345A236B79E83141875E51 /* XCLocalSwiftPackageReference "FunnelKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FunnelKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		623CE151FF3B8E07BBF47575 /* FunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FunnelKit;
+		};
+		F9C46903C9CB16FCF3B2B99E /* FunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FunnelKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 71747B1A432B153868EF1E66 /* Project object */;
+}

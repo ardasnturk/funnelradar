@@ -1,0 +1,79 @@
+name: FunnelRadar
+options:
+  bundleIdPrefix: com.jastech
+  developmentLanguage: en
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+packages:
+  FunnelKit:
+    path: FunnelKit
+
+targets:
+  FunnelRadar:
+    type: application
+    platform: macOS
+    sources:
+      - path: FunnelRadar
+    dependencies:
+      - package: FunnelKit
+      - target: funnelradar-cli
+        embed: true
+        copy:
+          destination: executables
+    settings:
+      base:
+        PRODUCT_NAME: FunnelRadar
+        PRODUCT_BUNDLE_IDENTIFIER: com.jastech.funnelradar
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: FunnelRadar
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.business
+        INFOPLIST_KEY_LSUIElement: YES
+        INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 Arda Sentürk"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_HARDENED_RUNTIME: YES
+        ENABLE_APP_SANDBOX: NO
+        COMBINE_HIDPI_IMAGES: YES
+      configs:
+        Debug:
+          CODE_SIGN_STYLE: Automatic
+          CODE_SIGN_IDENTITY: "-"
+        Release:
+          DEVELOPMENT_TEAM: 5JMD3VSD7N
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: "Developer ID Application"
+          OTHER_CODE_SIGN_FLAGS: --timestamp
+  funnelradar-cli:
+    type: tool
+    platform: macOS
+    sources:
+      - path: FunnelKit/Sources/funnelradar-hub
+    dependencies:
+      - package: FunnelKit
+    settings:
+      base:
+        PRODUCT_NAME: funnelradar-hub
+        PRODUCT_BUNDLE_IDENTIFIER: com.jastech.funnelradar.cli
+        ENABLE_HARDENED_RUNTIME: YES
+        SKIP_INSTALL: YES
+      configs:
+        Debug:
+          CODE_SIGN_STYLE: Automatic
+          CODE_SIGN_IDENTITY: "-"
+        Release:
+          DEVELOPMENT_TEAM: 5JMD3VSD7N
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: "Developer ID Application"
+          OTHER_CODE_SIGN_FLAGS: --timestamp

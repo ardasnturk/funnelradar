@@ -1,0 +1,14 @@
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcresult
+.build/
+.swiftpm/
+Package.resolved
+build/
+dist/
+*.p8
+*.p12
+scripts/.env
+scripts/l10n/__pycache__/
